@@ -1,0 +1,134 @@
+﻿.clearfix:before {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+*:not(#af-body) {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    color: black;
+    background-color: transparent;
+    font-size: 1.1em;
+    line-height: 1.21em;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.af-body {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.af-container {
+    border: 1px solid gray;
+    min-width: 1296px;
+}
+
+.af-body .af-frame-fiexd {
+    position: absolute;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100vw;
+    min-width: 1296px;
+}
+
+.af-frame-fiexd.af-header {
+    top: 0;
+    border-bottom: 1px solid gray;
+}
+
+.af-frame-fiexd.af-footer {
+    bottom: 0;
+    border-top: 1px solid gray;
+    background-color: coral;
+}
+
+.af-frame-fiexd.af-header nav ul {
+    margin-left: 96px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+}
+
+.af-frame-fiexd.af-header nav ul, li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+
+
+.af-body #af-frame-body {
+    display: flex;
+    min-height: 400px;
+    min-width: 1200px;
+    width: 100vw;
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    overflow: hidden;
+}
+
+    .af-body #af-frame-body aside {
+        overflow: auto;
+        min-height: 200px;
+        min-width: 96px;
+        width: 96px;
+        order: 1;
+        background-color: #a6a6a6;
+    }
+
+    .af-body #af-frame-body main {
+        overflow: auto;
+        flex: auto;
+        order: 2;
+        min-height: 200px;
+        min-width: 1200px;
+        width: 100%;
+        height: 100%;
+        background-color: blueviolet;
+    }

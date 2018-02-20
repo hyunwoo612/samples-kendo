@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TelerikNodejsApp1</title>
+
+    <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.common-material.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.material.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.1.117/js/kendo.aspnetmvc.min.js"></script>
+
+    <link rel="stylesheet" href="/public/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/public/css/layout.css" />
+    <link rel="stylesheet" href="/public/css/site.css" />
+</head>
+<body class="af-body">
+    <div class="af-container">
+        <header class="af-frame-fiexd af-header">
+            <nav>
+                <ul>
+                    <li data-url="/">home</li>
+                    <li data-url="users">user</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="af-frame-body">
+            <main class="af-frame-content frame-item">
+                사용자 관리
+            </main>
+            <aside class="af-frame-aside frame-item">
+                Ad aside Main
+            </aside>
+        </div>
+
+        <footer class="af-frame-fiexd af-footer">
+            Copyright
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".af-frame-fiexd").on("click", "li", function () {
+                var url = $(this).data("url");
+                if (url) {
+                    $(location).attr('href', url);
+                } else {
+                    alert("준비중..")
+                }
+            });
+        });
+    </script>
+</body>
+</html>

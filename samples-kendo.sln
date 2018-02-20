@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAspNetCoreApp1", "TelerikAspNetCoreApp1\TelerikAspNetCoreApp1.csproj", "{FCE63C16-CF3E-45EA-8963-25847A4F4E82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAspNetCoreApp1", ".\TelerikAspNetCoreApp1\TelerikAspNetCoreApp1.csproj", "{FCE63C16-CF3E-45EA-8963-25847A4F4E82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFC39398-62B8-4794-B7C7-2EEB5AA5938D}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp1", "..\TelerikNodejsApp1\NodejsWebApp1\NodejsWebApp1.njsproj", "{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TelerikNodejsApp1", ".\TelerikNodejsApp1\TelerikNodejsApp1.njsproj", "{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

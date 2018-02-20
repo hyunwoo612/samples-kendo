@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>de540c5d-fe26-4815-a601-c5d7aac3eb7c</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server.js</StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,16 +28,28 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="server.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="app.js" />
     <Content Include="package.json" />
-    <Content Include="public\index.html">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="public\css\layout.css" />
+    <Content Include="public\css\site.css" />
+    <Content Include="views\users.html" />
+    <Content Include="views\index.html" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
-    <Folder Include="router\" />
+    <Folder Include="public\css\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
+    <Folder Include="public\lib\" />
+    <Folder Include="public\lib\bootstrap\" />
+    <Folder Include="public\lib\bootstrap\dist\" />
+    <Folder Include="public\lib\bootstrap\dist\css\" />
+    <Folder Include="public\lib\bootstrap\dist\fonts\" />
+    <Folder Include="public\lib\bootstrap\dist\js\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
