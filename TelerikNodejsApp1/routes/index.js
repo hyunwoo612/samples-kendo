@@ -11,5 +11,4 @@ exports.users = function (req, res) {
     var url = path.join(__dirname, '../views', 'users.html');
     console.log(" >>>>>>> users.url => " + url);
     res.sendFile(url);
-    //브런치에서 추가
 };

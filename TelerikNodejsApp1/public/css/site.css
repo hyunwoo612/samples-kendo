@@ -1,26 +1,20 @@
-﻿@media (max-width: 768px) {
-
-    .k-header h1 {
-        margin: 0;
-        padding: 16px 15px 14px 60px;
-        font-size: 18px;
-        font-weight: lighter;
-    }
-
-
-    .k-rpanel {
-        position: relative;
-        box-sizing: border-box;
-    }
-    .k-rpanel .k-menu {
-        float: none;
-        display: block;
-        box-sizing: border-box;
-    }
-    .k-rpanel .k-menu .k-item {
-        display: block;
-        clear: both;
-        float: none;
-        width: 100%;
-    }
+﻿/*
+    bootstrap style custom
+*/
+.pull-left {
+    padding-left: 10px;
 }
+.pull-right {
+    padding-right: 10px;
+}
+
+.k-grid {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    height: 100%;
+}
+
+    .k-grid td {
+        padding: 3px !important;
+    }
