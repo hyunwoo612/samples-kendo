@@ -1,16 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAspNetCoreApp1", ".\TelerikAspNetCoreApp1\TelerikAspNetCoreApp1.csproj", "{FCE63C16-CF3E-45EA-8963-25847A4F4E82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelerikAspNetCoreApp1", "TelerikAspNetCoreApp1\TelerikAspNetCoreApp1.csproj", "{FCE63C16-CF3E-45EA-8963-25847A4F4E82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CFC39398-62B8-4794-B7C7-2EEB5AA5938D}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TelerikNodejsApp1", ".\TelerikNodejsApp1\TelerikNodejsApp1.njsproj", "{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TelerikNodejsApp1", "TelerikNodejsApp1\TelerikNodejsApp1.njsproj", "{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAspNetMvc6App1", "TelerikAspNetMvc6App1\TelerikAspNetMvc6App1.csproj", "{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
