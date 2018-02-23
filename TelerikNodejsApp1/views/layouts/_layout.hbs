@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{> page/title}}</title>
+    <link rel="stylesheet" href="/public/lib/bootstrap/dist/css/bootstrap.css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.common-material.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.material.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        #horizontal {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    {{> page/scripts}}
+    {{> page/header}}
+
+    <div id="af-frame-body">
+
+        <div class="frame-container">
+
+            <main>
+                {{! Every view gets inserted here }}
+                {{{body}}}
+            </main>
+
+            <aside class="af-frame-aside frame-item">
+                Ad aside Main
+            </aside>
+        </div>
+    </div>
+
+    {{> page/footer}}
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".af-frame-fiexd").on("click", "li", function () {
+                var url = $(this).data("url");
+                if (url) {
+                    $(location).attr('href', url);
+                } else {
+                    alert("준비중..")
+                }
+            });
+        });
+    </script>
+</body>
+</html>

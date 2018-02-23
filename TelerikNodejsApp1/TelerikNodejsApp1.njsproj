@@ -28,13 +28,21 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="routes\index.js" />
+    <Compile Include="routes\route-index.js" />
     <Compile Include="app.js" />
     <Content Include="package.json" />
     <Content Include="public\css\layout.css" />
     <Content Include="public\css\site.css" />
-    <Content Include="views\users.html" />
     <Content Include="views\index.html" />
+    <Content Include="views\layouts\_users.hbs" />
+    <Content Include="views\partials\page\scripts.hbs" />
+    <Content Include="views\layouts\_layout.hbs" />
+    <Content Include="views\partials\page\footer.hbs" />
+    <Content Include="views\partials\page\title.hbs" />
+    <Content Include="views\partials\page\header.hbs" />
+    <Content Include="views\users.html" />
+    <Content Include="views\users.hbs" />
+    <Content Include="views\index.hbs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
@@ -49,6 +57,9 @@
     <Folder Include="public\lib\bootstrap\dist\js\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
+    <Folder Include="views\layouts\" />
+    <Folder Include="views\partials\" />
+    <Folder Include="views\partials\page\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

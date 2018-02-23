@@ -40,6 +40,7 @@ namespace TelerikAspNetMvc6App1
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
             else
             {
@@ -48,15 +49,6 @@ namespace TelerikAspNetMvc6App1
 
             app.UseStaticFiles();
 
-#if FEATURE_SIGNALR
-            // Integrate with OWIN
-            app.UseAppBuilder(ConfigureOwinServices);
-#elif FEATURE_SIGNALR_ASPNETCORE
-            app.UseSignalR(routes =>
-            {
-                routes.MapHub<AbpCommonHub>("/signalr");
-            });
-#endif
 
             app.UseMvc(routes => {
                 routes.MapRoute(

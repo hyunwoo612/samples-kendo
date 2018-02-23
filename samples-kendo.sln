@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "TelerikNodejsApp1", "TelerikNodejsApp1\TelerikNodejsApp1.njsproj", "{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAspNetMvc6App1", "TelerikAspNetMvc6App1\TelerikAspNetMvc6App1.csproj", "{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelerikAspNetMvc6App1", "TelerikAspNetMvc6App1\TelerikAspNetMvc6App1.csproj", "{EEA7E005-2779-4C50-873F-C05B1DA89861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelerikAspNetMvc5App1", "TelerikAspNetMvc5App1\TelerikAspNetMvc5App1.csproj", "{507C73EA-E3BA-4CD1-A7C2-EF8923531B9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +30,14 @@ Global
 		{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE540C5D-FE26-4815-A601-C5D7AAC3EB7C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA43EB0D-DC22-4BFE-BF1D-1E560654627E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEA7E005-2779-4C50-873F-C05B1DA89861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA7E005-2779-4C50-873F-C05B1DA89861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA7E005-2779-4C50-873F-C05B1DA89861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA7E005-2779-4C50-873F-C05B1DA89861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507C73EA-E3BA-4CD1-A7C2-EF8923531B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507C73EA-E3BA-4CD1-A7C2-EF8923531B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507C73EA-E3BA-4CD1-A7C2-EF8923531B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507C73EA-E3BA-4CD1-A7C2-EF8923531B9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

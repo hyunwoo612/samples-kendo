@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - TelerikAspNetMvc6App1</title>
+
     <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.common-material.min.css" rel="stylesheet" type="text/css" />
     <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
     <link href="https://kendo.cdn.telerik.com/2018.1.117/styles/kendo.material.min.css" rel="stylesheet" type="text/css" />
@@ -23,6 +24,7 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
 </head>
 <body>
     <div class="k-header">
@@ -33,33 +35,32 @@
         </div>
     </div>
     <div class="container menu-content">
-        <div id="responsive-panel">
-            @(Html.Kendo().Menu()
-                .Name("Menu")
-                .Items(items =>
-                {
-                    items.Add()
-                        .Text("Home")
-                        .Action("Index", "Home");
-                    items.Add()
-                        .Text("About")
-                        .Action("About", "Home");
-                    items.Add()
-                        .Text("Contact")
-                        .Action("Contact", "Home");
-                })
-            )
-            
+            <div id="responsive-panel">
+                @(Html.Kendo().Menu()
+                    .Name("Menu")
+                    .Items(items =>
+                    {
+                        items.Add()
+                            .Text("Home")
+                            .Action("Index", "Home");
+                        items.Add()
+                            .Text("About")
+                            .Action("About", "Home");
+                        items.Add()
+                            .Text("Contact")
+                            .Action("Contact", "Home");
+                        items.Add().Text("Disabled item").Enabled(false);
+                    })
+                )
+            </div>
+            <button id="configure" class="k-rpanel-toggle k-button k-primary btn-toggle"><span class="k-icon k-i-hbars"></span></button>
         </div>
-        <button id="configure" class="k-rpanel-toggle k-button k-primary btn-toggle"><span class="k-icon k-i-hbars"></span></button>
-    </div>
-
     <div class="container body-content">
-            @RenderBody()
-            <footer class="footer">
-                <span class="text-muted">Copyright © @DateTime.Now.Year Progress Software Corporation and/or its subsidiaries or affiliates.</span>
-                <span class="text-muted">All rights reserved.</span>
-            </footer>
+        @RenderBody()
+        <footer class="footer">
+            <span class="text-muted">Copyright © 2002-2017 Telerik.</span>
+            <span class="text-muted">All rights reserved.</span>
+        </footer>
     </div>
 
     @RenderSection("scripts", required: false)
